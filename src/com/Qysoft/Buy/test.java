@@ -140,7 +140,10 @@ Toast.makeText(test.this,"xxxxxxxxxxxxx",1).show();
 		//返回的条形码数据
         if(data == null) return;
 		String code = data.getStringExtra("Code");
-	
+
+
+//aaaaaaaaaaaaaaaaa
+
 		//输入文本框
         editText.setText(code);
 
