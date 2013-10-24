@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_gravity="top"
+        >
+
+
+    <EditText
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_alignParentTop="true"
+            android:width="150dp"
+            android:inputType="text"/>
+    <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取二维码"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/editText"
+            android:layout_alignBottom="@+id/editText"/>
+
+    <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView2"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/editText">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+            <ListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listViewTitle"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"/>
+            <ListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listView"
+                    android:layout_below="@+id/listViewTitle"
+                    android:layout_alignParentLeft="true"
+                    />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:id="@+id/btnQuery"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_toRightOf="@+id/button1"
+            android:onClick="onClickQuery"/>
+
+
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnQuery"/>
+
+
+</RelativeLayout>

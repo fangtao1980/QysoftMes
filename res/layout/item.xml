@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="物料编号"
+            android:id="@+id/tvWlbh"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:width="80dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="物料名称"
+            android:id="@+id/tvWlmc"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tvWlbh"
+            android:width="80dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="型号规格"
+            android:id="@+id/tvWlxhgg"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tvWlmc"
+            android:width="80dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="采购数量"
+            android:id="@+id/tvSl"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tvWlxhgg"
+            android:width="80dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text1"
+            android:id="@+id/tvCgdj"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tvSl"  />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text2"
+            android:id="@+id/tvBz"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tvCgdj"
+            android:width="200dp"/>
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/checkBox"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tvBz"
+            android:layout_marginLeft="13dp"/>
+</RelativeLayout>
